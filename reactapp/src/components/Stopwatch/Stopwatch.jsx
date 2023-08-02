@@ -24,7 +24,7 @@ const Stopwatch = () => {
           }
           upms++;
         //   console.log(upms, ups, upm);
-        setTimer({ hr: uphr, m: upm, s: ups, ms: upms });
+        setTimer({ hr: uphr, m: upm, s: ups});
     }
 
     // for disable reset button
