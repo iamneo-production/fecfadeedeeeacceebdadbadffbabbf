@@ -80,7 +80,7 @@ const Stopwatch = () => {
                 <div className="bg-white mt-8 p flex justify-center text-4xl">
                     <div >
                         <h1 className="text-center  py-4">React Stopwatch</h1>
-                        <p data-testid="time " className=" mt-4 text-center">
+                        <p data-testid="time" className=" mt-4 text-center">
                             <span>{timer.hr >= 10 ? timer.hr :"0" + timer.hr}</span>:  
                             <span>{timer.m >= 10 ?  " "+timer.m :"0" + timer.m}</span>:  
                             <span>{timer.s >= 10 ? " "+timer.s :"0" + timer.s}</span>   
