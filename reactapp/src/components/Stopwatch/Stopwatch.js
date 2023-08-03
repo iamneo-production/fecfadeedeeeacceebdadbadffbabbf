@@ -24,7 +24,7 @@ const Stopwatch = () => {
     }
     upms++;
     //   console.log(upms, ups, upm);
-    setTimer({ hr: uphr, m: upm, s: ups, ms: upms });
+    setTimer({ hr: uphr, m: upm, s: ups });
   };
 
   // for disable reset button
@@ -110,7 +110,7 @@ const Stopwatch = () => {
               React Stopwatch
             </h1>
             <p
-              data-testid="time "
+              data-testid="time"
               className=" mt-4 text-center"
               style={{
                 textAlign: "center"
