@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Stopwatch = () => {
-  const [timer, setTimer] = useState({ m: 0, s: 0, ms: 0 });
+  const [timer, setTimer] = useState({ hr: 0, m: 0, s: 0, ms: 0 });
   const [inter, setInter] = useState();
 
   var uphr = timer.hr,
@@ -18,10 +18,13 @@ const Stopwatch = () => {
       ups = 0;
       upm++;
     }
-    
+    if (upm === 60) {
+      upm = 0;
+      uphr++;
+    }
     upms++;
     //   console.log(upms, ups, upm);
-    setTimer({ m: upm, s: ups, ms: upms });
+    setTimer({ hr: uphr, m: upm, s: ups, ms: upms });
   };
 
   // for disable reset button
@@ -60,7 +63,7 @@ const Stopwatch = () => {
   // click event for reset btn
   const clickReset = () => {
     clearInterval(inter);
-    setTimer({ m: 0, s: 0, ms: 0 });
+    setTimer({ hr: 0, m: 0, s: 0, ms: 0 });
     setIsDisabled(!isDisabled);
     setPause(false);
     setResume(false);
@@ -229,3 +232,4 @@ const Stopwatch = () => {
 };
 
 export default Stopwatch;
+
