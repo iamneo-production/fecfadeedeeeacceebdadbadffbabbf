@@ -9,7 +9,7 @@ const Stopwatch = () => {
     ups = timer.s,
     upms = timer.ms;
 
-  const run = () => {
+  const run = () => { 
     
     if (upms === 36) { 
       upms = 0;
