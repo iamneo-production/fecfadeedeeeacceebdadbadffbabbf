@@ -11,6 +11,9 @@ const Stopwatch = () => {
 
   const run = () => {
     
+    setTimer(prevtimer)=> {
+      let {uphr ,upm , ups,upms} =prevtimer
+    
     if (upms === 36) {
       upms = 0;
       ups++;
@@ -23,7 +26,7 @@ const Stopwatch = () => {
       upm = 0;
       uphr++;
     }
-    upms++;
+    
     console.log(upms, ups, upm);
     const data = setTimer({ hr: uphr, m: upm, s: ups });
   };
