@@ -11,7 +11,7 @@ const Stopwatch = () => {
 
   const run = () => {
     
-    if (upms === 36) {
+    if (upms === 36) { 
       upms = 0;
       ups++;
     }
