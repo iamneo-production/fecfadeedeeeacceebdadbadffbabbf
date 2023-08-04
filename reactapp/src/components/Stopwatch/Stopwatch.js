@@ -128,7 +128,7 @@ const Stopwatch = () => {
                 style={{
                   align: "center",
                   margin: "4px 0",
-                  marginLeft: "170px",
+                  marginLeft: "10px",
                   backgroundColor: "GREY",
                   padding: "4px",
                   paddingLeft: "10px",
@@ -154,7 +154,7 @@ const Stopwatch = () => {
                 className="my-4 ml-10 bg-gray-200 px-4 py-2 rounded border-2 border-black hover:bg-white"
                 style={{
                   margin: "4px 0",
-                  marginLeft: "170px",
+                  marginLeft: "10px",
                   backgroundColor: "gray",
                   padding: "4px",
                   paddingLeft: "10px",
