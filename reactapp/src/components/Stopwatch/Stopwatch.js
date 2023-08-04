@@ -4,10 +4,10 @@ const Stopwatch = () => {
   const [timer, setTimer] = useState({ hr: 0, m: 0, s: 0, ms: 0 });
   const [inter, setInter] = useState();
 
-  var uphr = timer.hr,
+  let uphr = timer.hr,
     upm = timer.m,
-    ups = timer.s;
-  var  upms = timer.ms;
+    ups = timer.s,
+    upms = timer.ms;
 
   const run = () => {
     ++upms;
