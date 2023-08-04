@@ -34,6 +34,7 @@ describe('Testing Stopwatch', () => {
         
         const start = screen.getByTestId('start');
         const reset = screen.getByTestId('reset');
+
         const time = screen.getByTestId('time');
 
         fireEvent.click(start);
