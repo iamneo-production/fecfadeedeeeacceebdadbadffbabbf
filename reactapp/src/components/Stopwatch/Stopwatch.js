@@ -54,10 +54,12 @@ const Stopwatch = () => {
 
   // click event for pause btn
   const clickResume = () => {
+    
     setResume(false);
     setPause(true);
     run();
     setInter(setInterval(run, 20));
+    console.log("hello");
   };
 
   // click event for reset btn
