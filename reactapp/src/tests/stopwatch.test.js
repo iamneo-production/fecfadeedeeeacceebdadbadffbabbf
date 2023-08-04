@@ -39,7 +39,7 @@ describe('Testing Stopwatch', () => {
 
         fireEvent.click(start);
 
-        expect(screen.queryByTestId('start')).toBeNull();
+        await waitFor(() => {expect(screen.queryByTestId('start')).toBeNull();
         expect(screen.queryByTestId('pause')).toBeInTheDocument();
         expect(reset).not.toHaveAttribute('disabled');
         expect(time.textContent.split(' ').join('')).toBe('00:00:00');
