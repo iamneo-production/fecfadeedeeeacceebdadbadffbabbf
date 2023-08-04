@@ -23,7 +23,7 @@ const Stopwatch = () => {
       uphr++;
     }
     upms++;
-    //   console.log(upms, ups, upm);
+    console.log(upms, ups, upm);
     const data = setTimer({ hr: uphr, m: upm, s: ups });
   };
 
@@ -118,8 +118,8 @@ const Stopwatch = () => {
                 textAlign: "center"
               }}
             >
-              <span>{timer.hr >= 10 ? timer.hr : " 0" + timer.hr}</span> :
-              <span>{timer.m >= 10 ? " " + timer.m : " 0" + timer.m}</span> :
+              <span>{timer.hr >= 10 ? timer.hr : " 0" + timer.hr}</span>:
+              <span>{timer.m >= 10 ? " " + timer.m : " 0" + timer.m}</span>:
               <span>{timer.s >= 10 ? " " + timer.s : " 0" + timer.s}</span>
             </p>
             {start && (
