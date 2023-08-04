@@ -11,7 +11,7 @@ const Stopwatch = () => {
 
   const run = () => {
     
-    if (upms === 1000) {
+    if (upms === 36) {
       upms = 0;
       ups++;
     }
@@ -25,8 +25,8 @@ const Stopwatch = () => {
     }
     upms++;
     
-     console.log(upms, ups, upm);
-    return (setTimer({ hr: uphr, m: upm, s: ups ,ms:upms}));
+    // console.log(upms, ups, upm);
+    (setTimer({ hr: uphr, m: upm, s: ups ,ms:upms}));
   };
 
   // for disable reset button
@@ -61,7 +61,7 @@ const Stopwatch = () => {
     setPause(true);
     run();
     setInter(setInterval(run, 20));
-    console.log("hello");
+    //console.log("hello");
   };
 
   // click event for reset btn
