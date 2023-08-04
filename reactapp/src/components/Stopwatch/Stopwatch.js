@@ -10,8 +10,8 @@ const Stopwatch = () => {
     upms = timer.ms;
 
   const run = () => {
-    ++upms;
-    if (upms === 36) {
+    
+    if (upms === 1000) {
       upms = 0;
       ups++;
     }
@@ -23,8 +23,9 @@ const Stopwatch = () => {
       upm = 0;
       uphr++;
     }
+    upms++;
     
-    // console.log(upms, ups, upm);
+     console.log(upms, ups, upm);
     return (setTimer({ hr: uphr, m: upm, s: ups ,ms:upms}));
   };
 
