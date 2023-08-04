@@ -6,14 +6,11 @@ const Stopwatch = () => {
 
   var uphr = timer.hr,
     upm = timer.m,
-    ups = timer.s,
-    upms = timer.ms;
+    ups = timer.s;
+  var  upms = timer.ms;
 
   const run = () => {
-    var uphr = timer.hr,
-    upm = timer.m,
-    ups = timer.s,
-    upms = timer.ms;
+    
     if (upms === 36) {
       upms = 0;
       ups++;
