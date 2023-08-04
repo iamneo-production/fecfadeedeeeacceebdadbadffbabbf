@@ -10,10 +10,7 @@ const Stopwatch = () => {
   var  upms = timer.ms;
 
   const run = () => {
-    
-    setTimer(prevtimer)=> {
-      let {uphr ,upm , ups,upms} =prevtimer
-    
+    ++upms;
     if (upms === 36) {
       upms = 0;
       ups++;
@@ -27,8 +24,8 @@ const Stopwatch = () => {
       uphr++;
     }
     
-    console.log(upms, ups, upm);
-    const data = setTimer({ hr: uphr, m: upm, s: ups });
+    // console.log(upms, ups, upm);
+    return (setTimer({ hr: uphr, m: upm, s: ups ,ms:upms}));
   };
 
   // for disable reset button
